@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
+import Head from 'next/head'
 import styledTheme from '../theme'
 import GlobalStyles from '../components/GlobalStyles/GlobalStyles'
 
@@ -15,7 +15,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={styledTheme[theme]}>
-      <button onClick={switchTheme}>Switch Theme</button>
+      <Head>
+        <title>Create Nexsadasdt App Iujuu</title>
+      </Head>
       <GlobalStyles />
       <Component  {...pageProps} />
     </ThemeProvider>
