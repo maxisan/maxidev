@@ -33,3 +33,8 @@ export default interface ThemeCollection {
   dark: Theme;
   light: Theme;
 }
+
+export enum ThemeTypes {
+  dark = 'dark',
+  light = 'light'
+}
