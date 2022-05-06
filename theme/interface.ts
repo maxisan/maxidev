@@ -16,6 +16,13 @@ export interface Depths {
   loader: string;    
 }
 
+export interface Viewports {
+  tablet: string;
+  tabletL: string;
+  desktop: string;
+  desktopXl: string;
+}
+
 export interface Theme {
   colors: {
     heart: color;
@@ -27,6 +34,7 @@ export interface Theme {
     font: string;
   }
   depths: Depths;
+  viewports: Viewports
 }
 
 export default interface ThemeCollection {

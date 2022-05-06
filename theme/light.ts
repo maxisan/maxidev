@@ -1,6 +1,6 @@
 const light = {
   colors: {
-    onSurface: '#fcedda',
+    onSurface: '#fdfdfd',
     font: '#012531',
   }
 }

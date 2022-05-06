@@ -1,4 +1,4 @@
-import renderWithTheme from '../../../utils/testUtils'
+import renderWithTheme from 'utils/testUtils'
 import Title from '.'
 
 describe('Title', () => {
@@ -16,12 +16,12 @@ describe('Title', () => {
   })
 
   describe('Bold prop', () => {
-    test('The title should have font-size 600 by default', () => {
+    test('The title should have font-weight 500 by default', () => {
       const { getByText } = renderWithTheme(<Title>Test title</Title>)
-      expect(getByText('Test title')).toHaveStyleRule('font-weight', '600')
+      expect(getByText('Test title')).toHaveStyleRule('font-weight', '500')
     })
 
-    test('The title should have font-size 700 when bold is true', () => {
+    test('The title should have font-weight 700 when bold is true', () => {
       const { getByText } = renderWithTheme(<Title bold>Test title</Title>)
       expect(getByText('Test title')).toHaveStyleRule('font-weight', '700')
     })
