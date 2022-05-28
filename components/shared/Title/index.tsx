@@ -1,6 +1,7 @@
-import React from 'react'
-import { ITitle, TagName } from './interface'
-import { StyledTitle } from './styled'
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react';
+import { ITitle, TagName } from './interface';
+import StyledTitle from './styled';
 
 const Title:React.FC<ITitle & React.HTMLAttributes<HTMLHeadingElement>> = ({
   children,
@@ -8,7 +9,7 @@ const Title:React.FC<ITitle & React.HTMLAttributes<HTMLHeadingElement>> = ({
   bold = false,
   ...rest
 }) => {
-  const tag = `h${level}`
+  const tag = `h${level}`;
 
   return (
     <StyledTitle
@@ -18,7 +19,7 @@ const Title:React.FC<ITitle & React.HTMLAttributes<HTMLHeadingElement>> = ({
     >
       {children}
     </StyledTitle>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;

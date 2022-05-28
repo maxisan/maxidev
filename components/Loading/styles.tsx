@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const LoadingContainer = styled.div`
+const LoadingContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,4 +10,6 @@ export const LoadingContainer = styled.div`
   top: 0;
   left: 0;
   background-color: #ffe99c;
-`
+`;
+
+export default LoadingContainer;

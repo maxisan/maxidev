@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const MainWrapper = styled.div`
   height: 100vh;
@@ -16,11 +16,11 @@ export const MainWrapper = styled.div`
     width: 200px;
     transform: rotate(-50deg);
   }
-`
+`;
 
 export const TitleWrapper = styled.div`
   margin-top: 10rem;
   .subtitle {
     font-size: 1.8rem;
   }
-`
+`;

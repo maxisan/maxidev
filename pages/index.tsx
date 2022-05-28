@@ -1,22 +1,31 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import styled from 'styled-components'
-import Landing from '../components/Landing'
-import Loading from 'components/Loading'
+import React from 'react';
+import type { NextPage } from 'next';
+import NavBar from 'components/NavBar';
+import Landing from '../components/Landing';
 
-const Title = styled.h1`
-  color: ${({theme}) => theme.colors.font};
-`
+const menuMock = [
+  {
+    name: 'Home',
+    href: '/',
+    icon: 'home',
+  },
+  {
+    name: 'About',
+    href: '/about',
+    icon: 'face',
+  },
+  {
+    name: 'Contact',
+    href: '/contact',
+    icon: 'mail',
+  },
+];
 
-const Home: NextPage = () => {
-  return (
-    <>
-      <Landing />
-      <Loading />
-    </>
-  )
-}
+const Home: NextPage = () => (
+  <>
+    <NavBar menu={menuMock} />
+    <Landing />
+  </>
+);
 
-export default Home
+export default Home;

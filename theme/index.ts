@@ -1,7 +1,7 @@
-import light from "./light";
-import dark from "./dark";
+import light from './light';
+import dark from './dark';
 import base from './base';
-import ThemeCollection, { Depths, Viewports } from "./interface";
+import ThemeCollection, { Depths, Viewports } from './interface';
 
 const depths: Depths = {
   content: '0',
@@ -12,33 +12,33 @@ const depths: Depths = {
   header: '25',
   backdrop: '30',
   dialog: '35',
-  loader: '40'
-}
+  loader: '40',
+};
 
 const viewports: Viewports = {
   tablet: '@media (min-width: 640px)',
   tabletL: '@media (min-width: 768px)',
   desktop: '@media (min-width: 1024px)',
-  desktopXl: '@media (min-width: 1280px)'
-}
+  desktopXl: '@media (min-width: 1280px)',
+};
 
 const theme: ThemeCollection = {
   dark: {
     colors: {
       ...base.colors,
-      ...dark.colors
+      ...dark.colors,
     },
     depths,
-    viewports
+    viewports,
   },
   light: {
     colors: {
       ...base.colors,
-      ...light.colors
+      ...light.colors,
     },
     depths,
-    viewports
-  }
-}
+    viewports,
+  },
+};
 
 export default theme;

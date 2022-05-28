@@ -1,14 +1,14 @@
-import React from 'react'
-import Image from 'next/image'
-import LoadingImage from 'public/assets/loading.gif'
-import { LoadingContainer } from './styles';
+import React from 'react';
+import Image from 'next/image';
+import LoadingImage from 'public/assets/loading.gif';
+import LoadingContainer from './styles';
 
-const Loading = () => {
+function Loading() {
   return (
     <LoadingContainer>
-      <Image src={LoadingImage} alt='loading' />
+      <Image src={LoadingImage} alt="loading" />
     </LoadingContainer>
-  )
+  );
 }
 
 export default Loading;

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
@@ -9,8 +9,8 @@ export default createGlobalStyle`
   body {
     font-family: 'Quicksand', serif;
 
-    background-color: ${({theme}) => theme.colors.onSurface};
-    color: ${({theme}) => theme.colors.font};
+    background-color: ${({ theme }) => theme.colors.onSurface};
+    color: ${({ theme }) => theme.colors.font};
   }
 
   * {
@@ -21,7 +21,7 @@ export default createGlobalStyle`
   h1 {
     font-size: 2rem;
 
-    ${({theme}) => theme.viewports.desktop} {
+    ${({ theme }) => theme.viewports.desktop} {
       font-size: 4rem;
     }
   }
@@ -37,4 +37,4 @@ export default createGlobalStyle`
   h4 {
     font-size: 1.2rem;
   }
-`
+`;
