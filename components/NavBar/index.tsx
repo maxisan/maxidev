@@ -1,5 +1,5 @@
 import React from 'react';
-import { IMenuItem } from './MenuItem';
+import MenuItem, { IMenuItem } from './MenuItem';
 import MainWrapper from './styles';
 
 interface INavBar {
@@ -8,7 +8,7 @@ interface INavBar {
 
 const NavBar:React.FC<INavBar> = ({ menu }) => (
   <MainWrapper>
-    {menu.map(({ name, href, icon }) => <p>{name + href + icon}</p>)}
+    {menu.map((item) => <MenuItem key={item.id} {...item} />)}
   </MainWrapper>
 );
 

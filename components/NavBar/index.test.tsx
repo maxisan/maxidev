@@ -1,24 +1,7 @@
 import React from 'react';
 import renderWithTheme from 'utils/testUtils';
 import NavBar from '.';
-
-const menuMock = [
-  {
-    name: 'Home',
-    href: '/',
-    icon: 'home',
-  },
-  {
-    name: 'About',
-    href: '/about',
-    icon: 'face',
-  },
-  {
-    name: 'Contact',
-    href: '/contact',
-    icon: 'mail',
-  },
-];
+import menuMock from './mocks/menuMock';
 
 describe('NavBar', () => {
   const render = () => renderWithTheme(<NavBar menu={menuMock} />);

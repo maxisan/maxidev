@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import viewports from './utils';
 
 export default createGlobalStyle`
 
@@ -18,10 +19,15 @@ export default createGlobalStyle`
     margin: 0;
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   h1 {
     font-size: 2rem;
 
-    ${({ theme }) => theme.viewports.desktop} {
+    ${viewports.desktop} {
       font-size: 4rem;
     }
   }
