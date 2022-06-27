@@ -1,7 +1,7 @@
-import light from "./light";
-import dark from "./dark";
+import light from './light';
+import dark from './dark';
 import base from './base';
-import ThemeCollection, { Depths } from "./interface";
+import ThemeCollection, { Depths } from './interface';
 
 const depths: Depths = {
   content: '0',
@@ -12,24 +12,24 @@ const depths: Depths = {
   header: '25',
   backdrop: '30',
   dialog: '35',
-  loader: '40'
-}
+  loader: '40',
+};
 
 const theme: ThemeCollection = {
   dark: {
     colors: {
       ...base.colors,
-      ...dark.colors
+      ...dark.colors,
     },
-    depths: depths
+    depths,
   },
   light: {
     colors: {
       ...base.colors,
-      ...light.colors
+      ...light.colors,
     },
-    depths: depths
-  }
-}
+    depths,
+  },
+};
 
 export default theme;

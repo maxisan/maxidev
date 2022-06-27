@@ -1,4 +1,4 @@
-export interface color {
+export interface Color {
   main: string;
   light?: string;
   dark?: string;
@@ -13,16 +13,16 @@ export interface Depths {
   header: string;
   backdrop: string;
   dialog: string;
-  loader: string;    
+  loader: string;
 }
 
 export interface Theme {
   colors: {
-    heart: color;
-    ocean: color;
-    sand: color;
-    leaf: color;
-    poison: color;
+    heart: Color;
+    ocean: Color;
+    sand: Color;
+    leaf: Color;
+    poison: Color;
     onSurface: string;
     font: string;
   }
@@ -36,5 +36,5 @@ export default interface ThemeCollection {
 
 export enum ThemeTypes {
   dark = 'dark',
-  light = 'light'
+  light = 'light',
 }

@@ -3,4 +3,4 @@ export interface ITitle {
   bold?: boolean
 }
 
-export type TagName = 'h1' | 'h2' | 'h3' | 'h4'
+export type TagName = 'h1' | 'h2' | 'h3' | 'h4';

@@ -5,7 +5,7 @@ import menuMock from 'components/NavBar/mocks/menuMock';
 import Landing from '../components/Landing';
 
 const Home: NextPage = () => (
-  <Landing />
+  <div> Esta es mi pagina de lab </div>
 );
 
 export default Home;
