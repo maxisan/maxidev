@@ -30,6 +30,7 @@ export interface Theme {
     green: Color;
     blue: Color;
     neutral: Color;
+    accent: string;
     onSurface: string;
     font: string;
   }
