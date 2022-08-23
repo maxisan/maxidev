@@ -4,7 +4,7 @@ import NavBar from '.';
 import menuMock from './mocks/menuMock';
 
 describe('NavBar', () => {
-  const render = () => renderWithTheme(<NavBar menu={menuMock} />);
+  const render = () => renderWithTheme(<NavBar />);
 
   it('renders correctly', () => {
     const wrapper = render();
