@@ -7,6 +7,7 @@ import GlobalStyles from 'styles';
 import styledTheme from 'theme';
 import Loading from 'components/Loading';
 import { useRouter } from 'next/router';
+import 'lang/i18n';
 
 enum Pages {
   HOME = 'home',
