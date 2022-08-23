@@ -1,31 +1,26 @@
 import React from 'react';
-import { useRouter } from 'next/router';
-import { IconWrapper, MenuItemWrapper } from './styles';
+import Link from 'next/link';
+import StyledMenuItem from './styles';
+import { StyledLink } from '@/shared/styledElements';
+import { IMenuItem } from 'types';
 
-export interface IMenuItem {
-  id: number;
-  name: string;
-  href: string;
-  icon: JSX.Element;
+interface IMenuItemProps {
+  item: IMenuItem;
+  setOpenMenu: (open: boolean) => void;
 }
 
-const MenuItem:React.FC<IMenuItem> = ({
-  name,
-  href,
-  icon,
-}) => {
-  const { pathname } = useRouter();
-  return (
-    <MenuItemWrapper
-      href={href}
-      isActive={href === pathname}
-    >
-      <IconWrapper isActive={href === pathname}>
-        {icon}
-      </IconWrapper>
-      <p>{name}</p>
-    </MenuItemWrapper>
-  );
-};
+const MenuItem:React.FC<IMenuItemProps> = ({
+  item:{
+    title,
+    href,
+  },
+  setOpenMenu
+}) => (
+  <Link href={href} passHref> 
+    <StyledLink onClick={() => setOpenMenu(false)}>
+      <StyledMenuItem>{title}</StyledMenuItem>
+    </StyledLink>
+  </Link>
+);
 
 export default MenuItem;

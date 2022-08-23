@@ -25,11 +25,9 @@ export interface Depths {
 
 export interface Theme {
   colors: {
-    pink: Color;
-    yellow: Color;
-    green: Color;
-    blue: Color;
+    main: Color;
     neutral: Color;
+    accent: string;
     onSurface: string;
     font: string;
   }
@@ -38,7 +36,10 @@ export interface Theme {
 
 export default interface ThemeCollection {
   dark: Theme;
-  light: Theme;
+  home: Theme;
+  about: Theme;
+  projects: Theme;
+  contact: Theme;
 }
 
 export enum ThemeTypes {

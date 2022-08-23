@@ -1,7 +1,10 @@
 import light from './light';
 import dark from './dark';
-import base from './base';
+import base from './colors';
 import ThemeCollection, { Depths } from './interface';
+import colors from './colors';
+
+
 
 const depths: Depths = {
   content: '0',
@@ -18,18 +21,49 @@ const depths: Depths = {
 const theme: ThemeCollection = {
   dark: {
     colors: {
-      ...base.colors,
+      main: colors.dark,
+      neutral: colors.neutral,
+      accent: colors.accent,
       ...dark.colors,
     },
     depths,
   },
-  light: {
+  home: {
     colors: {
-      ...base.colors,
+      main: colors.home,
+      neutral: colors.neutral,
+      accent: colors.accent,
       ...light.colors,
     },
     depths,
   },
+  about: {
+    colors: {
+      main: colors.about,
+      neutral: colors.neutral,
+      accent: colors.accent,
+      ...light.colors,
+    },
+    depths,
+  },
+  projects: {
+    colors: {
+      main: colors.projects,
+      neutral: colors.neutral,
+      accent: colors.accent,
+      ...light.colors,
+    },
+    depths,
+  },
+  contact: {
+    colors: {
+      main: colors.contact,
+      neutral: colors.neutral,
+      accent: colors.accent,
+      ...light.colors,
+    },
+    depths,
+  }
 };
 
 export default theme;
