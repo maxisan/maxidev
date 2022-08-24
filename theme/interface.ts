@@ -43,6 +43,9 @@ export default interface ThemeCollection {
 }
 
 export enum ThemeTypes {
-  dark = 'dark',
-  light = 'light',
+  DARK = 'dark',
+  HOME = 'home',
+  ABOUT = 'about',
+  PROJECTS = 'projects',
+  CONTACT = 'contact'
 }

@@ -7,6 +7,9 @@ import GlobalStyles from 'styles';
 import styledTheme from 'theme';
 import Loading from 'components/Loading';
 import { useRouter } from 'next/router';
+import { appWithTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 
 enum Pages {
   HOME = 'home',
@@ -38,4 +41,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);
+
+export async function getStaticProps({ locale }:{[key:string]:any}) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale)),
+      // Will be passed to the page component as props
+    },
+  };
+}
