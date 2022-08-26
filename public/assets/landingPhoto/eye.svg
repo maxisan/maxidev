@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1.6787781mm"
+   height="1.6787999mm"
+   viewBox="0 0 1.678778 1.6787998"
+   version="1.1"
+   id="svg1530"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="eyes.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1532"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.6154618"
+     inkscape:cx="-38.425337"
+     inkscape:cy="27.337429"
+     inkscape:window-width="1920"
+     inkscape:window-height="1044"
+     inkscape:window-x="1366"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1527" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-124.02242,-202.46278)">
+    <g
+       id="g1466-3"
+       transform="matrix(0.8716596,0,0,0.8716596,74.923874,124.31906)">
+      <path
+         d="m 58.253621,90.612601 c 0,0.531575 -0.431129,0.96273 -0.962965,0.96273 -0.531862,0 -0.962991,-0.431155 -0.962991,-0.96273 0,-0.532096 0.431129,-0.963251 0.962991,-0.963251 0.531836,0 0.962965,0.431155 0.962965,0.963251"
+         style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.00260832"
+         id="path537-6" />
+      <path
+         d="m 57.448276,90.437583 c 0,0.217795 -0.176426,0.394117 -0.39409,0.394117 -0.217664,0 -0.394091,-0.176322 -0.394091,-0.394117 0,-0.217533 0.176427,-0.394116 0.394091,-0.394116 0.217664,0 0.39409,0.176583 0.39409,0.394116"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.00260832"
+         id="path539-7" />
+    </g>
+  </g>
+</svg>

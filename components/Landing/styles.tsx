@@ -1,26 +1,31 @@
 import styled from 'styled-components';
+import viewports from 'styles/utils';
 
 export const MainWrapper = styled.div`
-  height: 100vh;
+  min-height: calc(100vh - 100px);
   width: 100vw;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
+  margin-top: 100px;
   padding: 1rem;
+  padding-bottom: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 3rem;
 
-  .hiCat {
-    position: absolute;
-    bottom: 3rem;
-    right: -200px;
-    width: 200px;
-    transform: rotate(-50deg);
+  ${viewports.desktop} {
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 `;
 
 export const TitleWrapper = styled.div`
-  margin-top: 10rem;
-  .subtitle {
-    font-size: 1.8rem;
+  .mega-title {
+    font-size: 3rem;
+    ${viewports.desktop} {
+      font-size: 4rem;
+    }
   }
 `;
+
+export const MainPhotoWrapper = styled.div`
+`
