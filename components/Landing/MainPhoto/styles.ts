@@ -8,10 +8,30 @@ export const MainWrapper = styled.div`
   width: fit-content;
   height: max-content;
   margin: 0 auto;
-  overflow: hidden;
   border-radius: 50%;
-  border: solid 10px ${({theme}) => theme.colors.accent};
+  border: solid 10px ${({theme}) => theme.colors.main[600]};
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all .4s;
+
+  &:hover, :focus-within {
+    border-color: ${({theme}) => theme.colors.accent};
+    outline: none;
+    .sticker {
+      z-index: 1;
+      opacity: 1;
+    }
+    .cat {
+      top: -20%;
+    }
+    .pc {
+      top: 30%;
+      left: -15%
+    }
+    .game {
+      top: 30%;
+      left: 90%
+    }
+  }
 `
 
 export const Glasses = styled.div`
@@ -49,4 +69,14 @@ export const Handwriting = styled.p`
   rotate: 15deg;
   top: 20%;
   left: 70%;
+`
+
+export const Sticker = styled.img<{targetPosition: {top: number, left: number}}>`
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  max-height: 100px;
+  transition: all .8s;
+  z-index: -1;
+  opacity: 0;
 `

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image'
 import React, { useEffect, useState} from 'react'
-import { Eye, EyePosition, EyeWrapper, Glasses, MainWrapper, Side } from './styles'
+import { Eye, EyePosition, EyeWrapper, Glasses, MainWrapper, Side, Sticker } from './styles'
 
 const MainPhoto:React.FC = () => {
 
@@ -69,13 +69,16 @@ const MainPhoto:React.FC = () => {
   }
 
   return (
-    <MainWrapper>
+    <MainWrapper tabIndex={0}>
       <Image 
         alt=''
         src={'/assets/landingPhoto/landing-ok.webp'}
         height={400}
         width={400}
         onLoadingComplete={() => onLoadPhoto()}
+        style={{
+          borderRadius: '50%'
+        }}
       />
       <Glasses id='glasses'>
         <EyeWrapper side='left'>
@@ -93,12 +96,39 @@ const MainPhoto:React.FC = () => {
             className='eyes'
           />
         </EyeWrapper>
-          <img
-            className='glassesImg'
-            src='/assets/landingPhoto/glasses.svg'
-            alt=''
-          />
+        <img
+          className='glassesImg'
+          src='/assets/landingPhoto/glasses.svg'
+          alt=''
+        />
       </Glasses>
+      <Sticker
+        className='sticker cat'
+        src='/assets/landingPhoto/cat-sticker.webp'
+        alt=''
+        targetPosition={{
+          top: -40,
+          left: 0
+        }}
+      />
+      <Sticker
+        className='sticker game'
+        src='/assets/landingPhoto/game-sticker.webp'
+        alt=''
+        targetPosition={{
+          top: 10,
+          left: -40
+        }}
+      />
+      <Sticker
+        className='sticker pc'
+        src='/assets/landingPhoto/pc-sticker.webp'
+        alt=''
+        targetPosition={{
+          top: 10,
+          left: 40
+        }}
+      />
     </MainWrapper>
   )
 }
