@@ -4,6 +4,7 @@ export interface Viewports {
   tabletL: string;
   desktop: string;
   desktopXl: string;
+  desktopXxl: string;
 }
 
 const viewports: Viewports = {
@@ -12,6 +13,7 @@ const viewports: Viewports = {
   tabletL: '@media (min-width: 768px)',
   desktop: '@media (min-width: 1024px)',
   desktopXl: '@media (min-width: 1280px)',
+  desktopXxl: '@media (min-width: 1600px)',
 };
 
 export default viewports;
