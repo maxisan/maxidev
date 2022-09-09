@@ -1,16 +1,32 @@
 import styled from 'styled-components';
+import viewports from 'styles/utils';
 
 export const MainWrapper = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-  padding: 0 1.5rem;
-  display: flex;
+  padding: 0 1rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
   flex-direction: row;
   align-items: center;
   height: 100px;
   z-index: 10;
+  ${viewports.tablet} {
+    padding: 0 2rem;
+  }
 `;
+
+export const MenuWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
+export const CtaWrapper = styled.div`
+  grid-column: 3;
+  justify-self: end;
+`
 
 export const LogoWrapper = styled.div`
   padding-right: 1rem;
