@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -10,10 +10,24 @@ import { StyledButton, StyledLink } from '@/shared/styledElements';
 
 const NavBar:React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [onTop, setOnTop] = useState(true);
+
+  const checkIsOnTop = (e: Event) => {
+    if (window.scrollY === 0) setOnTop(true)
+    else setOnTop(false)
+  }
+
+  useEffect(() => {
+    document.addEventListener('scroll', checkIsOnTop)
+    return () => {
+      document.removeEventListener('scroll', checkIsOnTop)
+    }
+  }, [])
+  
 
   return (
     <>
-      <MainWrapper>
+      <MainWrapper onTop={onTop}>
         <MenuWrapper>
           <LogoWrapper>
             <Link href="/" passHref>

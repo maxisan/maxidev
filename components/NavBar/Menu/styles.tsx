@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const MainWrapper = styled.div<{ opened:boolean }>`
   height: ${({ opened }) => (opened ? '100vh' : '0px')};
-  background-color: ${({theme}) => theme.colors.main[200]};
+  background-color: ${({theme, opened}) => opened && theme.colors.main[200]};
   position: fixed;
   padding-top: 100px;
   padding-left: 2rem;

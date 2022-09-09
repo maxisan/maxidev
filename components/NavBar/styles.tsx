@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import viewports from 'styles/utils';
 
-export const MainWrapper = styled.nav`
+export const MainWrapper = styled.nav<{onTop: boolean}>`
   position: fixed;
   top: 0;
   left: 0;
@@ -13,6 +13,12 @@ export const MainWrapper = styled.nav`
   align-items: center;
   height: 100px;
   z-index: 10;
+  transition: all .3s ease-in-out;
+
+
+  background-color: ${({onTop, theme}):string => onTop ? 'transparent' : theme.colors.main[200]};
+  height: ${({onTop, theme}):string => onTop ? '10rem' : '4rem'};
+
   ${viewports.tablet} {
     padding: 0 2rem;
   }
