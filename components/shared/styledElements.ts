@@ -11,9 +11,19 @@ export const StyledLink = styled.a`
   } 
 `
 
-export const StyledButton = styled.button<{variant:string}>`
-  background-color: transparent;
+export const StyledButton = styled.button`
+  background-color: ${({theme}) => theme.colors.accent};
+  color: ${({theme}) => theme.colors.neutral[50]};
+  font-weight: bold;
   border: none;
-  margin: 0;
-  padding: 0;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: black;
+  }
+  transition: all 0.5s;
 `

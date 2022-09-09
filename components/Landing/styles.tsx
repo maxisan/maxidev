@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import viewports from 'styles/utils';
 
 export const MainWrapper = styled.div`
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 10rem);
   width: 100vw;
   margin-top: 100px;
   padding: 1rem 2rem;
