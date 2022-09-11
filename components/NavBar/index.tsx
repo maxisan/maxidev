@@ -33,9 +33,9 @@ const NavBar:React.FC = () => {
             <Link href="/" passHref>
               <StyledLink onClick={() => setOpenMenu(false)}>
                 <Image 
-                  src="/assets/logo.svg"
-                  width={60}
-                  height={60} 
+                  src="/assets/fullLogo.svg"
+                  width={321}
+                  height={83} 
                   alt='Volver al inicio' 
                   layout='fixed'
                 />

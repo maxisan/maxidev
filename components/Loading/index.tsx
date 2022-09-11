@@ -1,12 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
-import LoadingImage from 'public/assets/loading.gif';
-import LoadingContainer from './styles';
+import OpenIcon from 'public/assets/open.svg';
+import CloseIcon from 'public/assets/close.svg';
+import {LoadingContainer, LogoContainer, TextContainer} from './styles';
 
 function Loading() {
   return (
     <LoadingContainer>
-      <Image src={LoadingImage} alt="loading" />
+      <LogoContainer>
+        <Image src={OpenIcon} alt='loading' layout='fixed'/>
+        <TextContainer>
+          maxisan
+        </TextContainer>
+        <Image src={CloseIcon} alt='loading' layout='fixed'/>
+      </LogoContainer>
     </LoadingContainer>
   );
 }
