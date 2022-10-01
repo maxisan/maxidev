@@ -20,10 +20,10 @@ export const LogoContainer = styled.div`
 
 export const TextContainer = styled.div`
   font-family: 'Signika Negative', sans-serif;
-  font-size: 5.5rem;
+  font-size: 5rem;
   line-height: 1;
   width: 0px;
-  margin: 0 0.5rem;
+  margin: 0 0.1rem;
   overflow: hidden;
 `
 
