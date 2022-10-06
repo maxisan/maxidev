@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const LoadingContainer = styled.div`
+export const LoadingContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,21 @@ const LoadingContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffe99c;
 `;
 
-export default LoadingContainer;
+export const LogoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`
+
+export const TextContainer = styled.div`
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+  width: 0px;
+  margin: 0 0.1rem;
+  overflow: hidden;
+`
+
