@@ -1,0 +1,134 @@
+[
+  {
+    "id":"pro01",
+    "title": "BeerUp",
+    "shortDescription": {
+      "en": "",
+      "es": "",
+      "pt": ""
+    },
+    "techs": [
+      {
+        "name": "react",
+        "iconName": "SiReact"
+      },
+      {
+        "name": "tailwind",
+        "iconName": "SiTailwindcss"
+      },
+      {
+        "name": "node",
+        "iconName": "SiNodedotjs"
+      },
+      {
+        "name": "express",
+        "iconName": "SiExpress"
+      },
+      {
+        "name": "postgresql",
+        "iconName": "SiPostgresql"
+      }
+    ],
+    "scope": "fullstack",
+    "category": "challenge",
+    "projectUrl": null,
+    "imageUrl": null,
+    "longDescription": {
+      "en":"",
+      "es":"",
+      "pt":""
+    }
+  },
+  {
+    "id":"pro02",
+    "title": "G4 Games",
+    "shortDescription": {
+      "en": "",
+      "es": "",
+      "pt": ""
+    },
+    "techs": [
+      {
+        "name": "react",
+        "iconName": "SiReact"
+      },
+      {
+        "name": "node",
+        "iconName": "SiNodedotjs"
+      },
+      {
+        "name": "express",
+        "iconName": "SiExpress"
+      },
+      {
+        "name": "postgresql",
+        "iconName": "SiPostgresql"
+      }
+    ],
+    "scope": "fullstack",
+    "category": "work",
+    "projectUrl": null,
+    "imageUrl": null,
+    "longDescription": {
+      "en":"",
+      "es":"",
+      "pt":""
+    }
+  },
+  {
+    "id":"pro03",
+    "title": "Markdown previewer",
+    "shortDescription": {
+      "en": "",
+      "es": "",
+      "pt": ""
+    },
+    "techs": [
+      {
+        "name": "react",
+        "iconName": "SiReact"
+      },
+      {
+        "name": "Styled components",
+        "iconName": "SiStyledcomponents"
+      }
+    ],
+    "scope": "frontend",
+    "category": "labs",
+    "projectUrl": null,
+    "imageUrl": null,
+    "longDescription": {
+      "en":"",
+      "es":"",
+      "pt":""
+    }
+  },
+  {
+    "id":"pro04",
+    "title": "Quote generator",
+    "shortDescription": {
+      "en": "",
+      "es": "",
+      "pt": ""
+    },
+    "techs": [
+      {
+        "name": "react",
+        "iconName": "SiReact"
+      },
+      {
+        "name": "CSS",
+        "iconName": "SiCss3"
+      }
+    ],
+    "scope": "frontend",
+    "category": "labs",
+    "projectUrl": null,
+    "imageUrl": null,
+    "longDescription": {
+      "en":"",
+      "es":"",
+      "pt":""
+    }
+  }
+]
