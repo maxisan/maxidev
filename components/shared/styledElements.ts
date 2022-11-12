@@ -27,3 +27,11 @@ export const StyledButton = styled.button`
   }
   transition: all 0.5s;
 `
+
+export const StyledSelect = styled.select`
+  height: 3rem;
+  min-width: 200px;
+  border: 1px solid ${({theme}) => theme.colors.font};
+  border-radius: 100px;
+  padding: 0 1rem;
+`

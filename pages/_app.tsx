@@ -30,13 +30,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={styledTheme[getTheme() as Pages]}>
-      {/* <Head>
+      <Head>
         <title>Maxisan Dev</title>
       </Head>
       <GlobalStyles />
       <NavBar/>
-      <Component {...pageProps} /> */}
-      <Loading />
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }
