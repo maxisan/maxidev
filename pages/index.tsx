@@ -10,9 +10,6 @@ const Home: NextPage = () => {
   return (
     <>
       <Landing />
-      <div>
-        <ProjectsGallery />
-      </div>
     </>
 )
 };
