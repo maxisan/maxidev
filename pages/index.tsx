@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import Landing from '../components/Landing';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import ProjectElement from 'components/ProjectsGallery/ProjectElement';
+import ProjectsGallery from 'components/ProjectsGallery';
 
 const Home: NextPage = () => {
   const { t } = useTranslation()
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     <>
       <Landing />
       <div>
-        <ProjectElement />
+        <ProjectsGallery />
       </div>
     </>
 )

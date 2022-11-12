@@ -2,22 +2,30 @@ import React from 'react'
 import Image from 'next/image'
 import { ContentWrapper, ImageWrapper, MainWrapper } from './styles'
 import Techs from './Techs'
+import { IProject, MultilingualText } from 'types'
+import { useRouter } from 'next/router'
 
-const techMock = [{
-  name: 'React',
-  iconName: 'SiReact',
-}]
+const ProjectElement: React.FC<IProject> = ({
+  title,
+  shortDescription,
+  techs,
+  scope,
+  category,
+  projectUrl,
+  imageUrl = '/assets/projects/default.png',
+  longDescription,
+}) => {
+  const { locale } = useRouter();
 
-const ProjectElement: React.FC = () => {
   return (
     <MainWrapper>
-      <Techs techs={techMock}/>
+      <Techs techs={techs}/>
       <ImageWrapper>
-        <Image src="/assets/projects/Frame-21-1.png" alt="" height={300} width={300}/>
+        <Image src={imageUrl} alt="" height={300} width={300}/>
       </ImageWrapper>
       <ContentWrapper>
-        <h3>Project title</h3>
-        <p>Project description that says something</p>
+        <h3>{title}</h3>
+        <p>{shortDescription[locale as keyof MultilingualText|| 'es']}</p>
       </ContentWrapper>
     </MainWrapper>
   )

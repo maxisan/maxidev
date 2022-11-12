@@ -32,7 +32,6 @@
     "scope": "fullstack",
     "category": "challenge",
     "projectUrl": null,
-    "imageUrl": null,
     "longDescription": {
       "en":"",
       "es":"",
@@ -68,7 +67,6 @@
     "scope": "fullstack",
     "category": "work",
     "projectUrl": null,
-    "imageUrl": null,
     "longDescription": {
       "en":"",
       "es":"",
@@ -96,7 +94,6 @@
     "scope": "frontend",
     "category": "labs",
     "projectUrl": null,
-    "imageUrl": null,
     "longDescription": {
       "en":"",
       "es":"",
@@ -124,7 +121,6 @@
     "scope": "frontend",
     "category": "labs",
     "projectUrl": null,
-    "imageUrl": null,
     "longDescription": {
       "en":"",
       "es":"",

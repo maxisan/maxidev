@@ -1,4 +1,4 @@
-export type Scope = 'frontend' | 'backend' | 'fullstack';
+export type ProjectScope = 'frontend' | 'backend' | 'fullstack';
 export type HttpMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE'
 export type ProjectCategory = 'work' | 'challenge' | 'labs';
 
@@ -24,7 +24,7 @@ export interface IProject {
   title: string | MultilingualText;
   shortDescription: MultilingualText;
   techs: IProjectTech[];
-  scope: Scope;
+  scope: ProjectScope;
   category: ProjectCategory;
   projectUrl?: string;
   imageUrl?: string;
