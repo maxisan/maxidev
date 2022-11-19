@@ -2,14 +2,12 @@ import styled from 'styled-components';
 import viewports from 'styles/utils';
 
 export const MainWrapper = styled.div`
-  min-height: calc(100vh - 10rem);
+  height: 100vh;
   width: 100vw;
-  margin-top: 100px;
-  padding: 1rem 2rem;
-  padding-bottom: 0;
-  display: grid;
+  display: fixed;
   grid-template-rows: auto 1fr;
   gap: 3rem;
+  overflow: hidden;
 
   ${viewports.tablet} {
     grid-template-rows: 100%;
@@ -19,21 +17,16 @@ export const MainWrapper = styled.div`
 
 `;
 
-export const TitleWrapper = styled.div`
-  text-align: center;
-  .mega-title {
-    font-size: 3rem;
-    ${viewports.tablet} {
-      text-align: left;
-    }
-    ${viewports.desktop} {
-      font-size: 4rem;
-    }
-    ${viewports.desktopXxl} {
-      font-size: 6rem;
-    }
-  }
-`;
-
-export const MainPhotoWrapper = styled.div`
+export const ScrollIconContainer = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: ${({theme}) => theme.colors.neutral[50]};
+  padding: 1rem 0;
+  gap: 0.5rem;
 `

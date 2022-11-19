@@ -1,16 +1,16 @@
+import Loading from 'components/Landing/InitialLoading';
 import React from 'react';
-import MainPhoto from './MainPhoto';
-import { MainPhotoWrapper, MainWrapper, TitleWrapper } from './styles';
+import { BsMouse, BsChevronDoubleDown } from 'react-icons/bs'
+import { MainWrapper, ScrollIconContainer } from './styles';
 
 const Landing: React.FC = () => (
   <MainWrapper>
-    <TitleWrapper>
-      <h1 className='mega-title'>¡Hola! Soy Max,</h1>
-      <h1 className='mega-title'>Full stack developer</h1>
-    </TitleWrapper>
-    <MainPhotoWrapper>
-      <MainPhoto />
-    </MainPhotoWrapper>
+    <video src="/assets/videos/landing.webm" autoPlay loop muted />
+    <Loading />
+    <ScrollIconContainer>
+      <BsMouse size={'2rem'}/>
+      <BsChevronDoubleDown />
+    </ScrollIconContainer>
   </MainWrapper>
 );
 
