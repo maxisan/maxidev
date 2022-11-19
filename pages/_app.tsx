@@ -5,7 +5,7 @@ import Head from 'next/head';
 import NavBar from 'components/NavBar';
 import GlobalStyles from 'styles';
 import styledTheme from 'theme';
-import Loading from 'components/Loading';
+import Loading from 'components/Landing/InitialLoading';
 import { useRouter } from 'next/router';
 import { appWithTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -34,7 +34,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Maxisan Dev</title>
       </Head>
       <GlobalStyles />
-      <NavBar/>
       <Component {...pageProps} />
     </ThemeProvider>
   );

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import OpenIcon from 'public/assets/open.svg';
-import CloseIcon from 'public/assets/close.svg';
-import {LoadingContainer, LogoContainer, TextContainer} from './styles';
+import OpenIcon from 'public/assets/openWhite.svg';
+import CloseIcon from 'public/assets/closeWhite.svg';
+import {LoadingContainer, LogoContainer, SymbolContainer, TextContainer} from './styles';
 import { gsap } from 'gsap';
 
 function Loading() {
@@ -37,11 +37,15 @@ function Loading() {
   return (
     <LoadingContainer>
       <LogoContainer ref={diamondRef}>
-        <Image src={OpenIcon} alt='loading' layout='fixed'/>
+        <SymbolContainer>
+          <Image src={OpenIcon} alt='' height={200} width={100}/>
+        </SymbolContainer>
         <TextContainer ref={textRef}>
           maxisan
         </TextContainer>
-        <Image src={CloseIcon} alt='loading' layout='fixed'/>
+        <SymbolContainer>
+          <Image src={CloseIcon} alt='' height={200} width={100}/>
+        </SymbolContainer>
       </LogoContainer>
     </LoadingContainer>
   );
