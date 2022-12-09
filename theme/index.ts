@@ -1,6 +1,5 @@
 import light from './light';
 import dark from './dark';
-import base from './colors';
 import ThemeCollection, { Depths } from './interface';
 import colors from './colors';
 
@@ -23,44 +22,13 @@ const theme: ThemeCollection = {
     colors: {
       main: colors.dark,
       neutral: colors.neutral,
-      accent: colors.accent,
-      ...dark.colors,
     },
     depths,
   },
-  home: {
+  light: {
     colors: {
-      main: colors.home,
+      main: colors.caterpie,
       neutral: colors.neutral,
-      accent: colors.accent,
-      ...light.colors,
-    },
-    depths,
-  },
-  about: {
-    colors: {
-      main: colors.about,
-      neutral: colors.neutral,
-      accent: colors.accent,
-      ...light.colors,
-    },
-    depths,
-  },
-  projects: {
-    colors: {
-      main: colors.projects,
-      neutral: colors.neutral,
-      accent: colors.accent,
-      ...light.colors,
-    },
-    depths,
-  },
-  contact: {
-    colors: {
-      main: colors.contact,
-      neutral: colors.neutral,
-      accent: colors.accent,
-      ...light.colors,
     },
     depths,
   }

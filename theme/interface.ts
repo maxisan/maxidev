@@ -27,25 +27,16 @@ export interface Theme {
   colors: {
     main: Color;
     neutral: Color;
-    accent: string;
-    onSurface: string;
-    font: string;
   }
   depths: Depths;
 }
 
 export default interface ThemeCollection {
   dark: Theme;
-  home: Theme;
-  about: Theme;
-  projects: Theme;
-  contact: Theme;
+  light: Theme;
 }
 
 export enum ThemeTypes {
   DARK = 'dark',
-  HOME = 'home',
-  ABOUT = 'about',
-  PROJECTS = 'projects',
-  CONTACT = 'contact'
+  LIGHT = 'light',
 }

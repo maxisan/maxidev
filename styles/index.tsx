@@ -10,8 +10,8 @@ export default createGlobalStyle`
   body {
     font-family: 'Quicksand', serif;
 
-    background-color: ${({ theme }) => theme.colors.main[50]};
-    color: ${({ theme }) => theme.colors.font};
+    background-color: ${({ theme }) => theme.colors.neutral[50]};
+    color: ${({ theme }) => theme.colors.neutral[900]};
   }
 
   * {

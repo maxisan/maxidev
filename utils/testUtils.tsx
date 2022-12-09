@@ -6,8 +6,8 @@ import React, { ReactElement } from 'react';
 import theme from '../theme';
 import { ThemeTypes } from '../theme/interface';
 
-const renderWithTheme = (children: ReactElement, themeType?: ThemeTypes) => render(
-  <ThemeProvider theme={theme[themeType || 'home']}>
+const renderWithTheme = (children: ReactElement, themeType: ThemeTypes = ThemeTypes.LIGHT) => render(
+  <ThemeProvider theme={theme[themeType]}>
     {children}
   </ThemeProvider>,
 );
