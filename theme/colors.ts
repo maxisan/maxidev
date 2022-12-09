@@ -1,51 +1,16 @@
-export const about = {
-  50: '#fde8ed',
-  100: '#fbd1db',
-  200: '#f7a3b7',
-  300: '#f37593',
-  400: '#f15e81',
-  500: '#ef476f',
-  600: '#d13e61',
-  700: '#b33553',
-  800: '#952c45',
-  900: '#772437',
+export const caterpie = {
+  50: '#B7EFC5',
+  100: '#92E6A7',
+  200: '#6EDE8A',
+  300: '#4AD66D',
+  400: '#2DC653',
+  500: '#25A244',
+  600: '#208B3A',
+  700: '#1A7431',
+  800: '#155D27',
+  900: '#10451D',
 }
-export const home = {
-  50: '#fff9ec',
-  100: '#fff4d9',
-  200: '#ffe8b3',
-  300: '#ffdd8c',
-  400: '#ffd779',
-  500: '#ffd166',
-  600: '#dfb759',
-  700: '#bf9d4d',
-  800: '#9f8340',
-  900: '#806933',
-}
-export const projects = {
-  50: '#e0faf3',
-  100: '#c1f5e7',
-  200: '#a2f0db',
-  300: '#63e5c4',
-  400: '#25dbac',
-  500: '#06d6a0',
-  600: '#05bb8c',
-  700: '#05a178',
-  800: '#048664',
-  900: '#036b50',
-}
-export const contact = {
-  50: '#e1f0f5',
-  100: '#c4e2ec',
-  200: '#88c5d8',
-  300: '#4da7c5',
-  400: '#2f99bc',
-  500: '#118ab2',
-  600: '#0f799c',
-  700: '#0d6885',
-  800: '#0b566f',
-  900: '#094559',
-}
+
 export const neutral = {
   50: '#f8f9fa',
   100: '#e9ecef',
@@ -72,14 +37,9 @@ export const dark = {
   900: '#000000',
 }
 
-export const accent = '#f86624'
 
 const colors = {
-  about,
-  home,
-  projects,
-  contact,
-  accent,
+  caterpie,
   neutral,
   dark
 }

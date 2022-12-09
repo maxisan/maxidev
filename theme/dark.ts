@@ -1,7 +1,7 @@
 const dark = {
   colors: {
-    onSurface: '#012531',
-    font: '#fcedda',
+    surface: '#0E0E0E',
+    font: '#ffffff',
   },
 };
 
